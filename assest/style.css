@@ -1,0 +1,622 @@
+/* Rest CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: Helvetica, arial,sans-serif;
+    scroll-behavior: smooth;
+}
+/* Common */
+.clear {
+    clear: both;
+}
+
+:root {
+    --header-height: 46px;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-center {
+    text-align: center !important;
+}
+.row::after {
+    content: "";
+    display: block;
+    clear: both !important;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;   
+}
+
+.btn {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+.hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+.pull-right { 
+    float: right;
+}
+/* Main */
+.main {
+    /* overflow: hidden; */
+}
+.header {
+    width: 100%;
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.nav {
+    display: inline-block;
+}
+.nav-list, .subnav{
+    list-style-type: none;
+}
+.nav-list {
+    /* height: 46px; */
+}
+
+.nav-items {
+    display: inline-block;
+    height: 46px;
+}
+.nav-items:hover .nav-items-link,
+.subnav .subnav-items:hover .subnav-items-link {
+    background-color: #ccc;
+    color: black;
+}
+.nav .nav-items-link {
+    font-size: 1.5rem;
+    line-height: 46px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1px 24px;    
+}
+.subnav .subnav-items-link {
+    font-size: 1.4rem;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 38px;
+}
+.subnav .subnav-items-link {
+    color: #000;
+    width: 100%;
+}
+
+.nav-items-pos {
+    position: relative;
+}
+.nav-items-pos:hover .subnav {
+    display: block;
+}
+
+.nav .subnav {
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    display: none;
+}
+
+.nav-arrow-down {
+    font-size: 1.4rem;
+}
+
+.header .search-btn {
+    float: right;
+}
+.header .menu-icon {
+    display: none;
+}
+.header .search-icon, 
+.header .menu-icon {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 46px;
+    float: right;
+    padding: 0 22px;
+}
+.header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.slider {
+    margin-top: calc(var(--header-height));
+    padding-top: 50%;
+    background: url(./img/Slider1.jpg) top / cover no-repeat;
+    position: relative;
+}
+.text-content {
+    position: absolute;
+    color: #fff;
+    bottom: 10%;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+.text-heading {
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+.text-decription {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+}
+.content {
+
+}
+.content-section {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 64px 16px 112px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    color: #0057d0;
+}
+.section-sub-heading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.6;
+    margin: 20px 0;
+    font-style: italic;
+}
+.section-content {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+
+.member-list {
+    margin-top: 48px;
+}
+
+.member-list .member-name {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: green;
+    font-weight: 500;
+}
+.member-list .member-avt {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tiket-list {
+    background-color: #fff;
+    margin-top: 40px;
+    list-style: none;
+}
+
+.tiket-list .tiket-list-item {
+    font-size: 1.5rem;
+    padding: 11px 16px;
+    border-bottom: 1px #ddd solid;
+    color: #757575;
+}
+
+.tiket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.quantity {
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    height: 24px;
+    line-height: 24px;
+    width: 24px;
+    text-align: center;
+    float: right;
+    margin-top: -3px;
+}
+
+.place-list {
+    margin-top: 48px;
+
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+.place-img:hover {
+    opacity: 0.6;
+}
+.place-content {
+    background: #fff;
+    padding: 16px;
+    position: relative;
+    height: 100%;
+    max-height: 240px;
+}
+
+.place-heading {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+.place-time {
+    margin: 15px 0;
+    opacity: 0.6;
+    font-size: 1.5rem;
+}
+.place-desc {
+    font-size: 1.5rem;
+}
+
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 1.8rem;
+}
+
+.btn-buy-ticket {
+    position: absolute;
+    bottom: 8%;
+}
+.contact-info p i[class*='ti-'] {
+    width: 30px;
+    display: inline-block;
+    line-height: 1.6;
+}
+.contact-form {
+    font-size: 1.5rem;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}   
+.contact-form .submit-btn {
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    padding: 8px 16px;
+    outline: none;
+    float: right;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+.footer {
+    padding: 64px 14px;
+    margin: auto;
+    text-align: center;
+}
+.footer .social-list {
+    font-size: 2.4rem;
+} 
+.social-list > a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.6;
+    padding: 0 4px;
+}
+.social-list > a:hover {
+    opacity: 0.4;
+}
+.coppy-right {
+    display: block;
+    font-size: 1.5rem;
+    opacity: 0.6;
+}
+.coppy-right > a {
+    color: #000;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 10;
+}
+.overlay.open {
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header {
+    background: #009688;
+    height: 130px;
+    font-size: 30px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticket-icon {
+    margin-right: 14px;
+}
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #fff;
+}
+.close-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-body {
+    padding: 16px;
+}
+label.modal-label {
+    display: block;
+    font-size: 1.5rem;
+    margin: 15px 0 5px 0;
+}
+.modal-input {
+    padding: 9px;
+    width: 100%;
+    font-size: 1.5rem;
+    border: 1px #ccc solid;
+}
+
+.buy-ticket {
+    width: 100%;
+    margin: 16px 0;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background: #009688;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+}
+.buy-ticket:hover {
+    opacity: 0.6;
+}
+
+.modal-help{
+    float: right;
+    margin: 0 16px 16px 0;
+    font-size: 1.5rem;
+}
+.modal-help >a {
+    color: blue;
+}
+
+@keyframes modalFadeIn {
+    from { 
+        opacity: 0.6;
+        transform: translateY(-160px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeIn {
+    from { 
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }   
+}
+
+
+@media (max-width: 740px) {
+    .header {
+        overflow: hidden;
+    }
+    .nav { 
+        width: 100%;
+        position: relative;
+    }
+    .nav-items {
+        display: block;
+        width: 100%;
+        background-color: #000;
+        height: auto;
+    }
+    .nav .subnav {
+        background-color: #000;
+        position: initial;
+    }
+    .subnav .subnav-items-link {
+        color: #fff;
+        padding: 3px 40px;
+    }
+    .search-icon { 
+        display: none;
+    }
+    .header .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    /* Slider */
+    .text-content {
+        display: none;
+    }
+
+    /* Member list */
+    .member-list .member-avt {
+        width: 228px;
+    }
+
+    /* Tour Date */
+    .place-content {
+        height: initial;
+        max-height: initial;
+    }
+    .btn-buy-ticket {    
+        position: initial;
+        padding: 15px;
+        width: 100%;
+        text-align: center
+    }
+    .tour-container:not(first-child) {
+        margin-top: 16px;
+    }
+
+    /* Contact */
+    .contact-form {
+        margin-top: 16px;
+    }
+    .form-control {
+        padding: 15px;
+    }
+    .form-control-respon {
+        margin-top: 8px;
+    }
+    .btn-mobile {
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 9999;
+}
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 0;
+    margin-top: 16px;
+    border-radius: 2px;
+    border-left: 4px solid;
+    min-width: 400px;
+    max-width: 450px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(calc(100% + 32px));
+        opacity: 0.5;        
+    }   
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0
+    }
+}
+.toast__icon {
+    font-size: 24px;
+    border-radius: 100%;
+    margin: 0 12px;
+}
+.toast__body {
+    flex-grow: 1;
+}
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 14px;
+}
+.toast__close {
+    color:rgba(0, 0, 0, 0.3);
+    font-size: 20px;
+    padding: 0 12px;
+    cursor: pointer;
+}
+
+
+.toast--success {
+    border-color: #47d864;
+}
+.toast--warn {
+    border-color: #ffc021;
+}
+.toast--danger {
+    border-color: #ff6203;
+}
+
+.toast--success .toast__icon {
+    color: #47d864;
+}
+.toast--warn .toast__icon {
+    color:    #ffc021; 
+}
+.toast--danger .toast__icon {
+    color:     #ff6203;
+}

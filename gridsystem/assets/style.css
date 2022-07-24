@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.item {
+    height: 260px;
+    background-color: aqua;
+    color: #fff;
+    font-size: 40px;
+    line-height: 260px;
+    text-align: center;
+}
